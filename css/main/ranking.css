@@ -1,0 +1,49 @@
+.ranking {
+  width: 100%;
+  height: 100%; }
+  .ranking .tit {
+    width: 100%;
+    height: 1.06rem;
+    padding: 0 0.22rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #dadedd; }
+    .ranking .tit span {
+      height: 0.4rem;
+      line-height: 0.4rem;
+      border-left: solid 0.06rem #c8393b;
+      display: block;
+      text-indent: 0.14rem;
+      font-size: 0.36rem; }
+  .ranking .main-list {
+    width: 100%;
+    padding-left: 0.22rem; }
+    .ranking .main-list dl {
+      width: 100%;
+      height: 2.2rem; }
+    .ranking .main-list dt {
+      width: 1.8rem;
+      padding: 0.2rem 0;
+      margin-right: 0.22rem;
+      float: left; }
+      .ranking .main-list dt img {
+        width: 100%;
+        display: block; }
+    .ranking .main-list dd {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-bottom: solid 1px #dadedd; }
+    .ranking .main-list span {
+      line-height: 0.44rem;
+      color: #636564;
+      font-size: 0.24rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
+      padding-right: 0.3rem; }
+
+/*# sourceMappingURL=ranking.css.map */

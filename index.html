@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script>
+		;(function(win,doc){
+			var rem = 100/750*doc.documentElement.clientWidth;
+				doc.documentElement.style.fontSize = rem + "px";
+			win.onresize = function(){
+				rem = 100/750*doc.documentElement.clientWidth;
+				doc.documentElement.style.fontSize = rem + "px";
+			}
+		})(window,document);
+	</script>
+</head>
+<body ng-controller="controller">
+	<div class="mask">
+		<div class="maskBox">
+			<div class="m-header">
+				
+				<span class="close"><i class="iconfont">&#xe653;</i> 返回</span>
+				<div>
+					<h3 class="users"></h3>
+					<b class="names"></b>
+				</div>
+				<span class="last"><i class="iconfont">&#xe650;</i></span>
+			</div>
+			<div class="m-section">
+				<div class="microphone">
+					<img src="img/needle.png" alt="">
+				</div>
+				<div class="portrait">
+					<div class="slider-one">
+						<span class="portrait-tit"><img src="img/38765611.jpg" alt=""></span>
+						<span class="portrait-bl"><img src="img/disc.png" alt=""></span>
+						<span class="portrait-a"><img src="img/disc_light.png" alt=""></span>
+					</div>
+					<div class="slider-two">
+					</div>
+				</div>
+			</div>
+			<div class="m-footer">
+				<div class="line-box">
+					<span>00:00</span>
+					<div class="line"><div class="bg"></div><div class="dian">		</div></div>
+					<span class="zhongC">00:00</span>
+				</div>
+				<audio id="audio"  src=""></audio> 
+				<div class="footer-btn">
+						<i class="iconfont">&#xe612;</i>
+						<i class="iconfont prev">&#xe68d;</i>
+						<i class="iconfont switch">&#xe615;</i>
+						<i class="iconfont next">&#xe68c;</i>
+						<i class="iconfont">&#xe648;</i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap">
+		<header>
+			<div class="top">
+				<span><i class="iconfont">&#xe6eb;</i></span>
+				<ul>
+					<li ui-sref="main" ui-sref-active="col" ><i class="iconfont">&#xe7b4;</i></li>
+					<li ui-sref="music" ui-sref-active="col"><i class="iconfont">&#xe6ea;</i></li>
+					<li ui-sref="me" ui-sref-active="col"><i class="iconfont">&#xe647;</i></li>
+				</ul>
+				<span><i class="iconfont">&#xe729;</i></span>
+			</div>
+
+			
+		</header>
+		<section>
+			<ui-view></ui-view>
+		</section>
+		
+		
+		<footer>
+			<dl class="foot-left">
+				<dt><img src="./img/geD.jpg" alt=""></dt>
+				<dd>
+					<span class="users">Can't Complain</span>
+					<b class="names">Relient K</b>
+				</dd>
+				
+			</dl>
+			<div class="line"><div class="bg"></div></div>
+			<div class="foot-right">
+				<audio id="audio"  src=""></audio> 
+				<div>
+					<i class="iconfont switch">&#xe615;</i>
+					<i class="iconfont next">&#xe68c;</i>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+<script src="js/angular-ui-router.min.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/controller.js"></script>
+<script>
+	var audio = document.getElementById("audio"),
+		musicArr = ["MC高迪 - 一人我饮酒醉.mp3","MC阿哲 - 泪三年.mp3","mc洪磊 - 别哭了宝贝.mp3","欢子 - 心痛2009.mp3","郑源-当我孤独的时候还可以抱着你.mp3","迪克牛仔 - 放手去爱.mp3","豆奶 - 拥抱着你的滋味.mp3","许佳慧 - 预谋.mp3","冷漠 - 请你回到我的身边来.mp3","刘丹萌 - 决斗.mp3","李行亮 - 愿得一人心.mp3","南合文斗-让泪化作相思雨.mp3","欧得洋 - 孤独北半球.mp3","汪峰 - 当我想你的时候.mp3","小山 - 心痛2011.mp3","徐良 - 天真.mp3","徐良_孙羽幽 - 虐心.mp3","许佳慧 - 预谋.mp3","郑源 - 红尘情歌.mp3","陈楚生-有没有人告诉你.mp3","高进 - 拿得起放不下.mp3","关喆 - 如果分开我也爱你.mp3","黑龙 - 回心转意.mp3","黑龙 - 真的好爱你.mp3","MC天佑 - 为了你.mp3","Mc洪磊 - 我多想抱着你哭.mp3","MC天佑 - 心痛的曾经.mp3","神木与瞳 - 为你而活.mp3","汤潮-谁让我爱上了你dj.mp3"];
+			
+	$(".switch").on("click",function(){
+		icon();
+	})
+	var ind = 0;
+	$(".prev").on("click",function(){
+		auto("prev");
+		icon();
+	})
+	$(".next").on("click",function(){
+		auto();
+		icon();
+	})
+	auto()
+	// 播放
+	function auto(a){
+		audio.src = "./music/"+musicArr[ind];
+		var name = musicArr[ind];
+		$(".users").html(name.slice(name.indexOf("-")+1,name.indexOf(".")));
+		$(".names").html(name.slice(0,name.indexOf("-")));
+		if(audio.autoplay){
+			$(".switch").html('&#xe615;');
+		}else{
+			$(".switch").html('&#xf0088;');
+		}
+		if(a =="prev"){
+			ind--;
+		}else{
+			ind++;
+		}
+		if(ind>musicArr.length-1) ind=0;
+		if(ind<0) ind=musicArr.length-1;
+	};
+
+	// 点击进度条
+	$(".line").on("touchstart",function(e){
+		audio.pause();
+		var offsetL = $(this).offset().left,
+			leftP = (e.originalEvent.touches[0].clientX-offsetL)/$(this).width();
+		$(".bg").css("width",leftP*100+"%");
+		$(".dian").css("left",leftP*100+"%");
+		audio.currentTime = audio.duration*leftP;
+	}).on("touchend",function(){
+		icon();
+	})
+
+
+	//播放或暂停
+	var item = null;
+	function icon(){
+		if(audio.paused){
+			audio.play();
+			// 进度条
+			item = setInterval(function(){
+				$(".bg").css("width",audio.currentTime/audio.duration*100 + "%");
+				$(".dian").css("left",audio.currentTime/audio.duration*100+"%");
+			},16);
+			$('')
+			console.log(audio.currentTime);
+			console.log(audio.duration);
+			$(".portrait-tit,.portrait-a").addClass("doing");
+			$(".doing").css("animation-play-state","running")
+			$(".switch").html('&#xe615;');
+		}else{
+			clearInterval(item);
+			audio.pause();/*
+			$(".portrait-tit,.portrait-a").removeClass("doing")*/
+			$(".doing").css("animation-play-state","paused");
+			$(".switch").html('&#xf0088;');
+		}
+	}
+	audio.addEventListener('ended', function () {  
+		auto();
+		icon();
+	}, false);
+	
+	// 打开歌词页
+	$(".foot-left").on("touchend",function(){
+		$(".mask").show(300);
+	});
+	
+	// 关闭歌词页
+	$(".close").on("touchend",function(){
+		$(".mask").hide(300);
+	});
+
+
+
+</script>
+</html>

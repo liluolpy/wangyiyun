@@ -1,0 +1,104 @@
+.songSheet{
+	width:100%;
+	height: 100%;
+	padding:0 0.2rem;
+	.tit{
+		width:100%;
+		height: 1.06rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		span{
+			height: 0.36rem;
+			line-height: 0.36rem;
+			border-left:solid 0.06rem #c8393b;
+			display: block;
+			text-indent: 0.14rem;
+			font-size:0.3rem;
+		}
+		div{
+			border:solid #c8cac9 1px;
+			line-height: 0.58rem;
+			height: 0.6rem;
+			width:1.7rem;
+			border-radius:0.1rem;
+			text-align: center;
+			color:#636564;
+			font-size: 0.26rem;
+			i{
+				font-size: 0.26rem;
+			}
+		}
+	}
+	.logs{
+		width:100%;
+		height: 1.4rem;
+		position: relative;
+		background: #fff;
+		margin-bottom:0.2rem;
+		dl{
+			height:100%;
+			width:100%;
+		}
+		dt{
+			width:1.4rem;
+			float:left;
+			margin-right: 0.22rem;
+		}
+		img{
+			width:100%;
+			display: block;
+		}
+		dd{
+			height:100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		h3{
+			font-weight:normal;
+			font-size:0.34rem;
+			margin-bottom: 0.15rem;
+		}
+		p{
+			color:#a1a1a1;
+			font-size:0.22rem;
+		}
+		i.iconfont{
+			color:#eba95f;
+			font-size:0.38rem;
+		}
+
+	}
+	.arrow{
+		height:100%;
+		position: absolute;
+		top:0;
+		right:0.4rem;
+		font-size:0.44rem;
+		color:#ccc;
+		line-height: 1.4rem;
+		font-family: "宋体";
+	}
+	.main-list{
+		width:100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		dl{
+			width:3.45rem;
+			margin-bottom:0.3rem;
+		}
+		dt{
+			width:100%;
+		}
+		img{
+			width:100%;
+			display:block;
+		}
+		dd{
+			padding-top:0.14rem;
+			font-size:0.24rem;
+		}
+	}
+}

@@ -1,0 +1,150 @@
+.dynamic {
+  width: 100%;
+  height: 100%; }
+  .dynamic .tit {
+    width: 100%;
+    height: 0.86rem;
+    padding: 0 0.24rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .dynamic .tit span {
+      font-size: 0.28rem; }
+      .dynamic .tit span:nth-child(2) {
+        font-size: 0.24rem;
+        color: #767a79; }
+      .dynamic .tit span .iconfont {
+        font-size: 0.24rem; }
+  .dynamic .iscrolls {
+    width: 100%;
+    height: 1.5rem;
+    padding-left: 0.2rem;
+    overflow: hidden;
+    margin-bottom: 0.25rem; }
+  .dynamic .wBox {
+    width: 100%;
+    height: 100%;
+    width: 15.7rem; }
+    .dynamic .wBox ul {
+      width: 100%;
+      height: 100%; }
+    .dynamic .wBox li {
+      float: left;
+      width: 2.93rem;
+      height: 100%;
+      margin-right: 0.2rem; }
+    .dynamic .wBox img {
+      width: 100%;
+      display: block; }
+  .dynamic .error {
+    width: 100%;
+    padding: 0 0.2rem;
+    border-top: solid 1px #ccc;
+    display: flex; }
+    .dynamic .error .icon {
+      width: 0.7rem;
+      margin-right: 0.22rem;
+      line-height: 1.1rem; }
+      .dynamic .error .icon .iconfont {
+        font-size: 0.68rem;
+        color: #cd3d3d; }
+    .dynamic .error .right {
+      flex: 1; }
+      .dynamic .error .right h3 {
+        line-height: 1.1rem;
+        font-weight: normal;
+        font-size: 0.3rem; }
+    .dynamic .error .main {
+      width: 100%;
+      height: 1.7rem;
+      padding: 0.2rem;
+      display: flex;
+      background: #e7e9e8; }
+    .dynamic .error .imgs {
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-right: 0.2rem; }
+      .dynamic .error .imgs img {
+        width: 100%;
+        display: block; }
+    .dynamic .error .info {
+      height: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .dynamic .error .info p {
+        font-size: 0.28rem;
+        color: #6c6e6d;
+        line-height: 0.32rem; }
+      .dynamic .error .info span {
+        color: #49688a;
+        font-size: 0.28rem;
+        text-decoration: underline; }
+  .dynamic .success {
+    width: 100%;
+    padding: 0 0.2rem;
+    margin-top: 0.4rem;
+    border-top: solid 1px #ccc;
+    display: flex; }
+    .dynamic .success .icon {
+      width: 0.7rem;
+      margin-right: 0.22rem; }
+      .dynamic .success .icon img {
+        width: 100%;
+        display: block;
+        margin-top: 0.24rem; }
+    .dynamic .success .right {
+      flex: 1; }
+      .dynamic .success .right .top {
+        width: 100%;
+        height: 1.1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+    .dynamic .success .top-L {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 0.28rem; }
+      .dynamic .success .top-L span {
+        color: #3e7a9e;
+        line-height: 0.38rem; }
+      .dynamic .success .top-L small {
+        font-size: 0.22rem; }
+    .dynamic .success .top-R {
+      display: flex;
+      align-items: center;
+      height: 100%; }
+      .dynamic .success .top-R span {
+        display: block;
+        width: 1.12rem;
+        height: 0.52rem;
+        border: solid 1px #d5d9d9;
+        line-height: 0.5rem;
+        text-align: center;
+        font-size: 0.24rem;
+        color: #cc3931;
+        margin-right: 0.22rem; }
+        .dynamic .success .top-R span .iconfont {
+          font-size: 0.24rem; }
+      .dynamic .success .top-R b > .iconfont {
+        font-size: 0.28rem;
+        color: #d5d9d9; }
+    .dynamic .success .main {
+      width: 100%; }
+      .dynamic .success .main p {
+        font-size: 0.3rem;
+        line-height: 0.45rem;
+        margin-bottom: 0.22rem; }
+      .dynamic .success .main ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+      .dynamic .success .main li {
+        width: 3.08rem; }
+        .dynamic .success .main li img {
+          width: 100%; }
+
+/*# sourceMappingURL=dynamic.css.map */

@@ -1,0 +1,89 @@
+.music {
+  width: 100%; }
+  .music .list {
+    width: 100%; }
+    .music .list li {
+      display: flex;
+      height: 1.1rem;
+      align-items: center; }
+    .music .list span {
+      width: 1.05rem;
+      text-align: center; }
+    .music .list i.iconfont {
+      font-size: 0.45rem;
+      color: #cd3d3d; }
+    .music .list p {
+      font-size: 0.3rem;
+      flex: 1;
+      height: 100%;
+      line-height: 1.1rem;
+      border-bottom: solid 1px #ccc; }
+      .music .list p b {
+        font-weight: normal;
+        font-size: 0.26rem;
+        color: #929695; }
+  .music .tit {
+    width: 100%;
+    height: 0.6rem;
+    background: #e4e8e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.35rem 0 0.22rem; }
+    .music .tit p {
+      font-size: 0.28rem;
+      color: #626463; }
+      .music .tit p .iconfont {
+        font-size: 0.26rem;
+        margin-right: 0.1rem; }
+      .music .tit p b {
+        font-weight: normal; }
+    .music .tit span .iconfont {
+      font-size: 0.45rem;
+      color: #b3b5b4; }
+  .music .main-list {
+    width: 100%;
+    padding-left: 0.22rem; }
+    .music .main-list dl {
+      width: 100%;
+      height: 1.26rem; }
+    .music .main-list dt {
+      padding: 0.08rem 0;
+      float: left;
+      width: 1.04rem;
+      margin-right: 0.22rem; }
+      .music .main-list dt img {
+        display: block;
+        width: 100%; }
+    .music .main-list dd {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 0.35rem;
+      border-bottom: solid #ccc 1px; }
+      .music .main-list dd span .iconfont {
+        font-size: 0.45rem;
+        color: #b3b5b4; }
+      .music .main-list dd div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+      .music .main-list dd h3 {
+        font-size: 0.32rem;
+        font-weight: normal;
+        line-height: 0.54rem; }
+      .music .main-list dd p {
+        display: flex;
+        align-items: center;
+        font-size: 0.24rem;
+        color: #878787;
+        line-height: 0.45rem; }
+        .music .main-list dd p img {
+          width: 0.25rem;
+          height: 0.26rem;
+          display: block;
+          margin-right: 0.1rem; }
+
+/*# sourceMappingURL=music.css.map */

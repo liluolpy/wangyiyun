@@ -1,0 +1,87 @@
+@charset "UTF-8";
+.songSheet {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.2rem; }
+  .songSheet .tit {
+    width: 100%;
+    height: 1.06rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .songSheet .tit span {
+      height: 0.36rem;
+      line-height: 0.36rem;
+      border-left: solid 0.06rem #c8393b;
+      display: block;
+      text-indent: 0.14rem;
+      font-size: 0.3rem; }
+    .songSheet .tit div {
+      border: solid #c8cac9 1px;
+      line-height: 0.58rem;
+      height: 0.6rem;
+      width: 1.7rem;
+      border-radius: 0.1rem;
+      text-align: center;
+      color: #636564;
+      font-size: 0.26rem; }
+      .songSheet .tit div i {
+        font-size: 0.26rem; }
+  .songSheet .logs {
+    width: 100%;
+    height: 1.4rem;
+    position: relative;
+    background: #fff;
+    margin-bottom: 0.2rem; }
+    .songSheet .logs dl {
+      height: 100%;
+      width: 100%; }
+    .songSheet .logs dt {
+      width: 1.4rem;
+      float: left;
+      margin-right: 0.22rem; }
+    .songSheet .logs img {
+      width: 100%;
+      display: block; }
+    .songSheet .logs dd {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .songSheet .logs h3 {
+      font-weight: normal;
+      font-size: 0.34rem;
+      margin-bottom: 0.15rem; }
+    .songSheet .logs p {
+      color: #a1a1a1;
+      font-size: 0.22rem; }
+    .songSheet .logs i.iconfont {
+      color: #eba95f;
+      font-size: 0.38rem; }
+  .songSheet .arrow {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0.4rem;
+    font-size: 0.44rem;
+    color: #ccc;
+    line-height: 1.4rem;
+    font-family: "宋体"; }
+  .songSheet .main-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .songSheet .main-list dl {
+      width: 3.45rem;
+      margin-bottom: 0.3rem; }
+    .songSheet .main-list dt {
+      width: 100%; }
+    .songSheet .main-list img {
+      width: 100%;
+      display: block; }
+    .songSheet .main-list dd {
+      padding-top: 0.14rem;
+      font-size: 0.24rem; }
+
+/*# sourceMappingURL=songSheet.css.map */
